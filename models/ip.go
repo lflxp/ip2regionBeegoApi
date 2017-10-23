@@ -136,7 +136,7 @@ func ParseIp(ip string) *JSON {
 
 //二分法查询Asn
 func BinarySearchAsnIPv4(ip string) int {
-	lo,hi := 0,len(*Data)-1
+	lo,hi := 0,len(*Asn)-1
 	k,err := ip2long(ip)
 	//fmt.Println("ip ",ip,k)
 	if err != nil {
